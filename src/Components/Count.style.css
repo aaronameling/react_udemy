@@ -1,0 +1,11 @@
+.count-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.button-container {
+    display: flex;
+    gap: 1rem;
+}

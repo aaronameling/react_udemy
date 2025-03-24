@@ -1,0 +1,22 @@
+.btn {
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-success {
+    background-color: lightgreen;
+}
+
+.btn-publish {
+    background-color: lightcoral;
+}
+
+.btn-push {
+    background-color: lightblue;
+}
+
+.btn-commit {
+    background-color: lightsalmon;
+}

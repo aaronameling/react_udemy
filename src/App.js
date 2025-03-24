@@ -1,20 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import ButtonComp from "./Components/Button.comp.jsx";
+import CountComp from "./Components/Count.comp.jsx";
+import HeroComp from "./Components/Hero.comp.jsx";
+import './App.style.css';
 
 function App() {
+
+    const onClickHandler = (event, text) => {
+        event.target.style.backgroundColor = "red";
+        alert(text)
+    }
+
   return (
     <>
         <header>
-            <section className="hero-section">
-                <div className="text-container">
-                    <h1>Hello React</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium illo ipsum nam natus quae quibusdam sint? At et officiis quis!</p>
-                </div>
-                <div className="button-container">
-                    <button>click me</button>
-                </div>
-            </section>
+            <HeroComp eventHandler={onClickHandler} />
         </header>
+        <main>
+            <CountComp/>
+            <CountComp/>
+            <CountComp/>
+        </main>
     </>
   );
 }
